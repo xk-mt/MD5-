@@ -27,5 +27,5 @@ jobs:
         run: pwd
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
       - name: 运行4
-        run: MD5.py
+        run: python MD5.py
 

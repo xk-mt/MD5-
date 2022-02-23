@@ -24,8 +24,11 @@ jobs:
         run: python --version
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
       - name: 运行2
-        run: ls
+        run: python /home/runner/work/MD5-/MD5.py
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
-      - name: 运行2
+      - name: 运行3
+        run: python /home/runner/work/MD5-/MD5-/MD5.py
+      # 步骤，这里只写了一个步骤，目的是输出hello github acition
+      - name: 运行4
         run: pwd
 

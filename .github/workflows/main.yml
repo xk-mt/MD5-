@@ -20,6 +20,9 @@ jobs:
     steps:
 
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
-      - name: Run a one-line script
-        run: MD5.py
+      - name: 运行1
+        run: python --version
+      # 步骤，这里只写了一个步骤，目的是输出hello github acition
+      - name: 运行2
+        run: python MD5.py
 

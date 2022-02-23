@@ -18,20 +18,10 @@ jobs:
 
     # 指出这个build任务的步骤
     steps:
-      - name: 设置 Python 3.9
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
       - name: 运行1
-        run: python --version
-      - name: 运行3
-        run: pwd
-      - name: 运行4
-        run: cd ../
-      - name: 运行4
-        run: pwd
-      - name: 运行4
-        run: cd ../;pwd
-      - name: 运行4
-        run: ls
-
+        run: |
+          python --version
+          pwd
+          sudo cp -p ./chromedriver /usr/bin
+          chmod -R 777 /usr/bin/chromedriver
+          python ./MD5.py

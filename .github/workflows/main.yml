@@ -18,14 +18,14 @@ jobs:
 
     # 指出这个build任务的步骤
     steps:
-
-      # 步骤，这里只写了一个步骤，目的是输出hello github acition
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
       - name: 运行1
         run: python --version
-      # 步骤，这里只写了一个步骤，目的是输出hello github acition
       - name: 运行3
         run: pwd
-      # 步骤，这里只写了一个步骤，目的是输出hello github acition
       - name: 运行4
-        run: python MD5.py
+        run: cd ./;pwd;ls
 

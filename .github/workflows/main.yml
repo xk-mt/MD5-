@@ -18,10 +18,12 @@ jobs:
 
     # 指出这个build任务的步骤
     steps:
+      - name: '安装 requirements'
+        run: pip install -r leetcode-weekly/requirements.txt
       - name: 运行1
         run: |
           python --version
-          pwd
-          sudo cp -p ./chromedriver /usr/bin
-          chmod -R 777 /usr/bin/chromedriver
-          python ./MD5.py
+      - name: 'Working'
+        run: python leetcode-weekly/MD5.py
+      - name: 'Working'
+        run: python MD5.py
